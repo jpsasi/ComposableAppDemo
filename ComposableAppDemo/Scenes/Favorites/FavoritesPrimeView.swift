@@ -23,9 +23,9 @@ struct FavoritesPrimeView: View {
                 }
             }
             .listStyle(.plain)
-            .navigationTitle("Favorites Primes")
+            .navigationTitle("Favorites Prime")
             if state.favorites.count == 0 {
-                Text("No Favorite Primes")
+                Text("No Favorites Prime")
                     .font(.title)
             }
         }

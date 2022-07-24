@@ -16,7 +16,7 @@ struct ContentView: View {
                     CounterView(state: state)
                 }
                 NavigationLink("Favorites") {
-                    EmptyView()
+                    FavoritesPrimeView(state: state)
                 }
             }
             .listStyle(.plain)
