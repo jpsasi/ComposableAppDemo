@@ -11,6 +11,11 @@
 		9111FC5D288D6AB700A3E81F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9111FC5C288D6AB700A3E81F /* ContentView.swift */; };
 		9111FC5F288D6AB800A3E81F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9111FC5E288D6AB800A3E81F /* Assets.xcassets */; };
 		9111FC62288D6AB800A3E81F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9111FC61288D6AB800A3E81F /* Preview Assets.xcassets */; };
+		9111FC6D288D6B3000A3E81F /* CounterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9111FC6C288D6B3000A3E81F /* CounterView.swift */; };
+		9111FC6F288D6DAD00A3E81F /* IsPrimeModalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9111FC6E288D6DAD00A3E81F /* IsPrimeModalView.swift */; };
+		9111FC72288D6F8100A3E81F /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9111FC71288D6F8100A3E81F /* AppState.swift */; };
+		9111FC74288D71CD00A3E81F /* FavoritesPrimeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9111FC73288D71CD00A3E81F /* FavoritesPrimeView.swift */; };
+		9111FC77288D739900A3E81F /* PrimeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9111FC76288D739900A3E81F /* PrimeService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +24,11 @@
 		9111FC5C288D6AB700A3E81F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		9111FC5E288D6AB800A3E81F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9111FC61288D6AB800A3E81F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		9111FC6C288D6B3000A3E81F /* CounterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterView.swift; sourceTree = "<group>"; };
+		9111FC6E288D6DAD00A3E81F /* IsPrimeModalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IsPrimeModalView.swift; sourceTree = "<group>"; };
+		9111FC71288D6F8100A3E81F /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		9111FC73288D71CD00A3E81F /* FavoritesPrimeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesPrimeView.swift; sourceTree = "<group>"; };
+		9111FC76288D739900A3E81F /* PrimeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimeService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +63,9 @@
 			children = (
 				9111FC5A288D6AB700A3E81F /* ComposableAppDemoApp.swift */,
 				9111FC5C288D6AB700A3E81F /* ContentView.swift */,
+				9111FC75288D738B00A3E81F /* Service */,
+				9111FC70288D6F7300A3E81F /* State */,
+				9111FC68288D6ADE00A3E81F /* Scenes */,
 				9111FC5E288D6AB800A3E81F /* Assets.xcassets */,
 				9111FC60288D6AB800A3E81F /* Preview Content */,
 			);
@@ -65,6 +78,56 @@
 				9111FC61288D6AB800A3E81F /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		9111FC68288D6ADE00A3E81F /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				9111FC6B288D6B1600A3E81F /* Favorites */,
+				9111FC6A288D6B0000A3E81F /* IsPrimeModal */,
+				9111FC69288D6AF000A3E81F /* Counter */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		9111FC69288D6AF000A3E81F /* Counter */ = {
+			isa = PBXGroup;
+			children = (
+				9111FC6C288D6B3000A3E81F /* CounterView.swift */,
+			);
+			path = Counter;
+			sourceTree = "<group>";
+		};
+		9111FC6A288D6B0000A3E81F /* IsPrimeModal */ = {
+			isa = PBXGroup;
+			children = (
+				9111FC6E288D6DAD00A3E81F /* IsPrimeModalView.swift */,
+			);
+			path = IsPrimeModal;
+			sourceTree = "<group>";
+		};
+		9111FC6B288D6B1600A3E81F /* Favorites */ = {
+			isa = PBXGroup;
+			children = (
+				9111FC73288D71CD00A3E81F /* FavoritesPrimeView.swift */,
+			);
+			path = Favorites;
+			sourceTree = "<group>";
+		};
+		9111FC70288D6F7300A3E81F /* State */ = {
+			isa = PBXGroup;
+			children = (
+				9111FC71288D6F8100A3E81F /* AppState.swift */,
+			);
+			path = State;
+			sourceTree = "<group>";
+		};
+		9111FC75288D738B00A3E81F /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				9111FC76288D739900A3E81F /* PrimeService.swift */,
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +201,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				9111FC5D288D6AB700A3E81F /* ContentView.swift in Sources */,
+				9111FC77288D739900A3E81F /* PrimeService.swift in Sources */,
+				9111FC72288D6F8100A3E81F /* AppState.swift in Sources */,
 				9111FC5B288D6AB700A3E81F /* ComposableAppDemoApp.swift in Sources */,
+				9111FC6F288D6DAD00A3E81F /* IsPrimeModalView.swift in Sources */,
+				9111FC74288D71CD00A3E81F /* FavoritesPrimeView.swift in Sources */,
+				9111FC6D288D6B3000A3E81F /* CounterView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

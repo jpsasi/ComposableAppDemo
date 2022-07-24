@@ -8,18 +8,25 @@
 import SwiftUI
 
 struct ContentView: View {
+    @ObservedObject var state: AppState
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        NavigationView {
+            List {
+                NavigationLink("Counter View") {
+                    CounterView(state: state)
+                }
+                NavigationLink("Favorites") {
+                    EmptyView()
+                }
+            }
+            .listStyle(.plain)
+            .navigationTitle("Composable App Demo")
         }
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        ContentView(state: AppState())
     }
 }
