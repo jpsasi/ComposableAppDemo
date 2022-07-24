@@ -40,12 +40,15 @@ struct CounterView: View {
             }
             .disabled(disableNthPrimeButton)
             .navigationTitle("Counter Scene")
+            ProgressView()
+                .opacity(disableNthPrimeButton ? 1.0 : 0.0)
         }
         .font(.title)
         .sheet(isPresented: $showModalPrime) {
             IsPrimeModalView(state: state)
         }
-        .alert("\(ordinal(state.count)) prime number is \(prime)", isPresented: $showAlert) {
+        .alert("\(ordinal(state.count)) prime number is \(prime)",
+               isPresented: $showAlert) {
         }
     }
     
