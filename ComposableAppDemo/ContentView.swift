@@ -20,7 +20,7 @@ struct ContentView: View {
                 }
             }
             .listStyle(.plain)
-            .navigationTitle("Composable App Demo")
+            .navigationTitle("Composable Demo")
         }
     }
 }

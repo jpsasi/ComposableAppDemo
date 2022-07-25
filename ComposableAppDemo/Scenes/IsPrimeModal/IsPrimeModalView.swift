@@ -16,12 +16,15 @@ struct IsPrimeModalView: View {
             if state.favorites.contains(state.count) {
                 Button("Remove from Favorites") {
                     if let index = state.favorites.firstIndex(of: state.count) {
+                        let prime = state.favorites[index]
                         state.favorites.remove(at: index)
+                        state.activityFeed.append(.init(type: .removedFromFavoritePrime(prime)))
                     }
                 }
             } else {
                 Button("Save to Favorites") {
                     state.favorites.append(state.count)
+                    state.activityFeed.append(.init(type: .addedToFavoritePrime(state.count)))
                 }
             }
         } else {
