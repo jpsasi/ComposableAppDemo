@@ -8,27 +8,27 @@
 import SwiftUI
 
 struct IsPrimeModalView: View {
-    @ObservedObject var state: AppState
+    @ObservedObject var store: Store<AppState>
     
     var body: some View {
-        if isPrime(state.count) {
-            Text("\(state.count) is a Prime Number 😎")
-            if state.favorites.contains(state.count) {
+        if isPrime(store.state.count) {
+            Text("\(store.state.count) is a Prime Number 😎")
+            if store.state.favorites.contains(store.state.count) {
                 Button("Remove from Favorites") {
-                    if let index = state.favorites.firstIndex(of: state.count) {
-                        let prime = state.favorites[index]
-                        state.favorites.remove(at: index)
-                        state.activityFeed.append(.init(type: .removedFromFavoritePrime(prime)))
+                    if let index = store.state.favorites.firstIndex(of: store.state.count) {
+                        let prime = store.state.favorites[index]
+                        store.state.favorites.remove(at: index)
+                        store.state.activityFeed.append(.init(type: .removedFromFavoritePrime(prime)))
                     }
                 }
             } else {
                 Button("Save to Favorites") {
-                    state.favorites.append(state.count)
-                    state.activityFeed.append(.init(type: .addedToFavoritePrime(state.count)))
+                    store.state.favorites.append(store.state.count)
+                    store.state.activityFeed.append(.init(type: .addedToFavoritePrime(store.state.count)))
                 }
             }
         } else {
-            Text("\(state.count) is not a Prime Number 🥵")
+            Text("\(store.state.count) is not a Prime Number 🥵")
         }
     }
     
@@ -44,6 +44,6 @@ struct IsPrimeModalView: View {
 
 struct IsPrimeModalView_Previews: PreviewProvider {
     static var previews: some View {
-        IsPrimeModalView(state: AppState())
+        IsPrimeModalView(store: Store(state: AppState()))
     }
 }

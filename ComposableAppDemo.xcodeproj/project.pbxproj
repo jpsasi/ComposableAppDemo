@@ -17,6 +17,7 @@
 		9111FC74288D71CD00A3E81F /* FavoritesPrimeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9111FC73288D71CD00A3E81F /* FavoritesPrimeView.swift */; };
 		9111FC77288D739900A3E81F /* PrimeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9111FC76288D739900A3E81F /* PrimeService.swift */; };
 		9111FC7A288E614000A3E81F /* ActivityFeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9111FC79288E614000A3E81F /* ActivityFeedView.swift */; };
+		9111FC7D288E90BC00A3E81F /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9111FC7C288E90BC00A3E81F /* Store.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		9111FC73288D71CD00A3E81F /* FavoritesPrimeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesPrimeView.swift; sourceTree = "<group>"; };
 		9111FC76288D739900A3E81F /* PrimeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimeService.swift; sourceTree = "<group>"; };
 		9111FC79288E614000A3E81F /* ActivityFeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityFeedView.swift; sourceTree = "<group>"; };
+		9111FC7C288E90BC00A3E81F /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,8 +67,9 @@
 			children = (
 				9111FC5A288D6AB700A3E81F /* ComposableAppDemoApp.swift */,
 				9111FC5C288D6AB700A3E81F /* ContentView.swift */,
-				9111FC75288D738B00A3E81F /* Service */,
+				9111FC7B288E90AA00A3E81F /* Store */,
 				9111FC70288D6F7300A3E81F /* State */,
+				9111FC75288D738B00A3E81F /* Service */,
 				9111FC68288D6ADE00A3E81F /* Scenes */,
 				9111FC5E288D6AB800A3E81F /* Assets.xcassets */,
 				9111FC60288D6AB800A3E81F /* Preview Content */,
@@ -139,6 +142,14 @@
 				9111FC79288E614000A3E81F /* ActivityFeedView.swift */,
 			);
 			path = ActivityFeed;
+			sourceTree = "<group>";
+		};
+		9111FC7B288E90AA00A3E81F /* Store */ = {
+			isa = PBXGroup;
+			children = (
+				9111FC7C288E90BC00A3E81F /* Store.swift */,
+			);
+			path = Store;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -214,6 +225,7 @@
 				9111FC5D288D6AB700A3E81F /* ContentView.swift in Sources */,
 				9111FC77288D739900A3E81F /* PrimeService.swift in Sources */,
 				9111FC72288D6F8100A3E81F /* AppState.swift in Sources */,
+				9111FC7D288E90BC00A3E81F /* Store.swift in Sources */,
 				9111FC5B288D6AB700A3E81F /* ComposableAppDemoApp.swift in Sources */,
 				9111FC6F288D6DAD00A3E81F /* IsPrimeModalView.swift in Sources */,
 				9111FC7A288E614000A3E81F /* ActivityFeedView.swift in Sources */,

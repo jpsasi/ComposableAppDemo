@@ -7,10 +7,10 @@
 
 import Foundation
 
-class AppState: ObservableObject {
-    @Published var count: Int = 0
-    @Published var favorites: [Int] = []
-    @Published var activityFeed: [Activity] = []
+struct AppState {
+    var count: Int = 0
+    var favorites: [Int] = []
+    var activityFeed: [Activity] = []
 }
 
 struct Activity: Hashable, CustomStringConvertible {
@@ -29,7 +29,7 @@ struct Activity: Hashable, CustomStringConvertible {
     var formattedDate: String {
         let formatter = DateFormatter()
         formatter.dateStyle = .medium
-        formatter.timeStyle = .short
+        formatter.timeStyle = .medium
         return formatter.string(from: timeStamp)
     }
 }

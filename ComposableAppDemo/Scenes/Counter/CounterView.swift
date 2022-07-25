@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct CounterView: View {
-    @ObservedObject var state: AppState
+    @ObservedObject var store: Store<AppState>
     @State var showModalPrime = false
     @State var showAlert: Bool = false
     @State var disableNthPrimeButton: Bool = false
@@ -18,19 +18,19 @@ struct CounterView: View {
         VStack(spacing: 8) {
             HStack {
                 Button("-") {
-                    state.count -= 1
+                    store.state.count -= 1
                 }
-                Text("\(state.count)")
+                Text("\(store.state.count)")
                 Button("+") {
-                    state.count += 1
+                    store.state.count += 1
                 }
             }
             Button("Is this Prime Number?") {
                 showModalPrime = true
             }
-            Button("What is \(ordinal(state.count)) Prime Number?") {
+            Button("What is \(ordinal(store.state.count)) Prime Number?") {
                 disableNthPrimeButton = true
-                nthPrime(state.count) { prime in
+                nthPrime(store.state.count) { prime in
                     if let prime = prime {
                         self.prime = prime
                     }
@@ -45,9 +45,9 @@ struct CounterView: View {
         }
         .font(.title)
         .sheet(isPresented: $showModalPrime) {
-            IsPrimeModalView(state: state)
+            IsPrimeModalView(store: store)
         }
-        .alert("\(ordinal(state.count)) prime number is \(prime)",
+        .alert("\(ordinal(store.state.count)) prime number is \(prime)",
                isPresented: $showAlert) {
         }
     }
@@ -62,7 +62,7 @@ struct CounterView: View {
 struct CounterView_Previews: PreviewProvider {
     static var previews: some View {
         NavigationView {
-            CounterView(state: AppState())
+            CounterView(store: Store(state: AppState()))
         }
     }
 }
