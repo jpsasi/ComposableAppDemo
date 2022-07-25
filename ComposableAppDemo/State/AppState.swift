@@ -39,4 +39,22 @@ enum ActivityType: Hashable {
     case removedFromFavoritePrime(Int)
 }
 
+enum AppAction {
+    case counter(CounterAction)
+    case primeModal(PrimeModalAction)
+    case favoritePrime(FavoritePrimesAction)
+}
 
+enum CounterAction {
+    case incrTapped
+    case decrTapped
+}
+
+enum PrimeModalAction {
+    case saveFavoritePrimeTapped
+    case removeFavoritePrimeTapped
+}
+
+enum FavoritePrimesAction {
+    case deleteFavoritePrimes(IndexSet)
+}

@@ -9,9 +9,11 @@ import SwiftUI
 
 @main
 struct ComposableAppDemoApp: App {
+    @ObservedObject var store: Store<AppState, AppAction> = Store(state: AppState(),
+                                                                  reducer: appReducer)
     var body: some Scene {
         WindowGroup {
-            ContentView(store: Store(state: AppState()))
+            ContentView(store: store)
         }
     }
 }

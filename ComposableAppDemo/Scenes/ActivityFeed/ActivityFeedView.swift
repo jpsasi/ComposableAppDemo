@@ -8,12 +8,12 @@
 import SwiftUI
 
 struct ActivityFeedView: View {
-    @ObservedObject var store: Store<AppState>
+    @ObservedObject var store: Store<AppState, AppAction>
     
     var body: some View {
         ZStack {
             List {
-                ForEach(store.state.activityFeed.sorted(by: { $0.timeStamp > $1.timeStamp }),
+                ForEach(store.value.activityFeed.sorted(by: { $0.timeStamp > $1.timeStamp }),
                         id: \.self) { activity in
                     VStack(alignment:. leading) {
                         Text("\(activity.description)")
@@ -28,7 +28,7 @@ struct ActivityFeedView: View {
                 }
             }
             .listStyle(.plain)
-            if store.state.activityFeed.count == 0 {
+            if store.value.activityFeed.count == 0 {
                 Text("No Activities found")
                     .font(.title)
             }
@@ -43,7 +43,7 @@ struct ActivityFeedView_Previews: PreviewProvider {
         state.activityFeed.append(contentsOf: [.init(type: .addedToFavoritePrime(7)),
                                                .init(type: .removedFromFavoritePrime(5))])
         return NavigationView {
-            ActivityFeedView(store: Store(state: state))
+            ActivityFeedView(store: Store(state: state, reducer: appReducer))
         }
     }
 }

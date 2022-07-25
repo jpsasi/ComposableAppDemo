@@ -8,27 +8,22 @@
 import SwiftUI
 
 struct IsPrimeModalView: View {
-    @ObservedObject var store: Store<AppState>
+    @ObservedObject var store: Store<AppState, AppAction>
     
     var body: some View {
-        if isPrime(store.state.count) {
-            Text("\(store.state.count) is a Prime Number 😎")
-            if store.state.favorites.contains(store.state.count) {
+        if isPrime(store.value.count) {
+            Text("\(store.value.count) is a Prime Number 😎")
+            if store.value.favorites.contains(store.value.count) {
                 Button("Remove from Favorites") {
-                    if let index = store.state.favorites.firstIndex(of: store.state.count) {
-                        let prime = store.state.favorites[index]
-                        store.state.favorites.remove(at: index)
-                        store.state.activityFeed.append(.init(type: .removedFromFavoritePrime(prime)))
-                    }
+                    store.send(.primeModal(.removeFavoritePrimeTapped))
                 }
             } else {
                 Button("Save to Favorites") {
-                    store.state.favorites.append(store.state.count)
-                    store.state.activityFeed.append(.init(type: .addedToFavoritePrime(store.state.count)))
+                    store.send(.primeModal(.saveFavoritePrimeTapped))
                 }
             }
         } else {
-            Text("\(store.state.count) is not a Prime Number 🥵")
+            Text("\(store.value.count) is not a Prime Number 🥵")
         }
     }
     
@@ -44,6 +39,6 @@ struct IsPrimeModalView: View {
 
 struct IsPrimeModalView_Previews: PreviewProvider {
     static var previews: some View {
-        IsPrimeModalView(store: Store(state: AppState()))
+        IsPrimeModalView(store: Store(state: AppState(), reducer: appReducer))
     }
 }

@@ -33,6 +33,7 @@
 		9111FC76288D739900A3E81F /* PrimeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimeService.swift; sourceTree = "<group>"; };
 		9111FC79288E614000A3E81F /* ActivityFeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityFeedView.swift; sourceTree = "<group>"; };
 		9111FC7C288E90BC00A3E81F /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
+		91C2801E288EDC2C00F43C9C /* Composable.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Composable.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +74,7 @@
 				9111FC68288D6ADE00A3E81F /* Scenes */,
 				9111FC5E288D6AB800A3E81F /* Assets.xcassets */,
 				9111FC60288D6AB800A3E81F /* Preview Content */,
+				91C2801E288EDC2C00F43C9C /* Composable.playground */,
 			);
 			path = ComposableAppDemo;
 			sourceTree = "<group>";

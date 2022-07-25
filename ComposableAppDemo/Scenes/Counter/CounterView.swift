@@ -8,29 +8,29 @@
 import SwiftUI
 
 struct CounterView: View {
-    @ObservedObject var store: Store<AppState>
+    @ObservedObject var store: Store<AppState, AppAction>
     @State var showModalPrime = false
     @State var showAlert: Bool = false
     @State var disableNthPrimeButton: Bool = false
     @State var prime: Int = 0
     
     var body: some View {
-        VStack(spacing: 8) {
+        return VStack(spacing: 8) {
             HStack {
                 Button("-") {
-                    store.state.count -= 1
+                    store.send(.counter(.decrTapped))
                 }
-                Text("\(store.state.count)")
+                Text("\(store.value.count)")
                 Button("+") {
-                    store.state.count += 1
+                    store.send(.counter(.incrTapped))
                 }
             }
             Button("Is this Prime Number?") {
                 showModalPrime = true
             }
-            Button("What is \(ordinal(store.state.count)) Prime Number?") {
+            Button("What is \(ordinal(store.value.count)) Prime Number?") {
                 disableNthPrimeButton = true
-                nthPrime(store.state.count) { prime in
+                nthPrime(store.value.count) { prime in
                     if let prime = prime {
                         self.prime = prime
                     }
@@ -47,7 +47,7 @@ struct CounterView: View {
         .sheet(isPresented: $showModalPrime) {
             IsPrimeModalView(store: store)
         }
-        .alert("\(ordinal(store.state.count)) prime number is \(prime)",
+        .alert("\(ordinal(store.value.count)) prime number is \(prime)",
                isPresented: $showAlert) {
         }
     }
@@ -62,7 +62,8 @@ struct CounterView: View {
 struct CounterView_Previews: PreviewProvider {
     static var previews: some View {
         NavigationView {
-            CounterView(store: Store(state: AppState()))
+            CounterView(store: Store(state: AppState(),
+                                     reducer: appReducer))
         }
     }
 }

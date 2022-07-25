@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "D8A16DD7-93C9-45BB-927B-A6DC50A90741"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C5E02797-EB4E-44B8-BD93-BB3070586539"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ComposableAppDemo/ContentView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "13"
+            endingLineNumber = "13"
+            landmarkName = "body"
+            landmarkType = "24">
+            <Locations>
+               <Location
+                  uuid = "C5E02797-EB4E-44B8-BD93-BB3070586539 - 57a1c784d9b0ea30"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ComposableAppDemo.ContentView.body.getter : some"
+                  moduleName = "ComposableAppDemo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jpsasi/Developer/Personal/experiments/ios/ComposableAppDemo/ComposableAppDemo/ContentView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "224">
+               </Location>
+               <Location
+                  uuid = "C5E02797-EB4E-44B8-BD93-BB3070586539 - 2e370b1c282d3050"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; &lt;&lt;opaque return type of SwiftUI.View.navigationTitle(SwiftUI.LocalizedStringKey) -&gt; some&gt;&gt;.0 in ComposableAppDemo.ContentView.body.getter : some"
+                  moduleName = "ComposableAppDemo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jpsasi/Developer/Personal/experiments/ios/ComposableAppDemo/ComposableAppDemo/ContentView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "420">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "501D3E52-F1A0-41F5-B597-AB24C1E9C9F1"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ComposableAppDemo/Scenes/Counter/CounterView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "18"
+            endingLineNumber = "18"
+            landmarkName = "body"
+            landmarkType = "24">
+            <Locations>
+               <Location
+                  uuid = "501D3E52-F1A0-41F5-B597-AB24C1E9C9F1 - 9246ac8442d8e2f9"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ComposableAppDemo.CounterView.body.getter : some"
+                  moduleName = "ComposableAppDemo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jpsasi/Developer/Personal/experiments/ios/ComposableAppDemo/ComposableAppDemo/Scenes/Counter/CounterView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "556">
+               </Location>
+               <Location
+                  uuid = "501D3E52-F1A0-41F5-B597-AB24C1E9C9F1 - 92c17bfb756c57f3"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; SwiftUI.TupleView&lt;(SwiftUI.HStack&lt;SwiftUI.TupleView&lt;(SwiftUI.Button&lt;SwiftUI.Text&gt;, SwiftUI.Text, SwiftUI.Button&lt;SwiftUI.Text&gt;)&gt;&gt;, SwiftUI.Button&lt;SwiftUI.Text&gt;, &lt;&lt;opaque return type of SwiftUI.View.navigationTitle(SwiftUI.LocalizedStringKey) -&gt; some&gt;&gt;.0, &lt;&lt;opaque return type of SwiftUI.View.opacity(Swift.Double) -&gt; some&gt;&gt;.0)&gt; in ComposableAppDemo.CounterView.body.getter : some"
+                  moduleName = "ComposableAppDemo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jpsasi/Developer/Personal/experiments/ios/ComposableAppDemo/ComposableAppDemo/Scenes/Counter/CounterView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "19"
+                  endingLineNumber = "19"
+                  offsetFromSymbolStart = "936">
+               </Location>
+               <Location
+                  uuid = "501D3E52-F1A0-41F5-B597-AB24C1E9C9F1 - 92c17bfb756c57d2"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; SwiftUI.TupleView&lt;(SwiftUI.HStack&lt;SwiftUI.TupleView&lt;(SwiftUI.Button&lt;SwiftUI.Text&gt;, SwiftUI.Text, SwiftUI.Button&lt;SwiftUI.Text&gt;)&gt;&gt;, SwiftUI.Button&lt;SwiftUI.Text&gt;, &lt;&lt;opaque return type of SwiftUI.View.navigationTitle(SwiftUI.LocalizedStringKey) -&gt; some&gt;&gt;.0, &lt;&lt;opaque return type of SwiftUI.View.opacity(Swift.Double) -&gt; some&gt;&gt;.0)&gt; in ComposableAppDemo.CounterView.body.getter : some"
+                  moduleName = "ComposableAppDemo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jpsasi/Developer/Personal/experiments/ios/ComposableAppDemo/ComposableAppDemo/Scenes/Counter/CounterView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "1992">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "963EE6EA-724F-4A6B-B94D-5D0F50D3FA6D"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ComposableAppDemo/ComposableAppDemoApp.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "15"
+            endingLineNumber = "15"
+            landmarkName = "body"
+            landmarkType = "24">
+            <Locations>
+               <Location
+                  uuid = "963EE6EA-724F-4A6B-B94D-5D0F50D3FA6D - 32fb48bdffa1255f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ComposableAppDemo.ComposableAppDemoApp.body.getter : some"
+                  moduleName = "ComposableAppDemo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jpsasi/Developer/Personal/experiments/ios/ComposableAppDemo/ComposableAppDemo/ComposableAppDemoApp.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "212">
+               </Location>
+               <Location
+                  uuid = "963EE6EA-724F-4A6B-B94D-5D0F50D3FA6D - 18f34f27203a63a4"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; ComposableAppDemo.ContentView in ComposableAppDemo.ComposableAppDemoApp.body.getter : some"
+                  moduleName = "ComposableAppDemo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jpsasi/Developer/Personal/experiments/ios/ComposableAppDemo/ComposableAppDemo/ComposableAppDemoApp.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "68">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
