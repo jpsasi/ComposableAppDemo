@@ -16,6 +16,7 @@
 		9111FC72288D6F8100A3E81F /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9111FC71288D6F8100A3E81F /* AppState.swift */; };
 		9111FC74288D71CD00A3E81F /* FavoritesPrimeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9111FC73288D71CD00A3E81F /* FavoritesPrimeView.swift */; };
 		9111FC77288D739900A3E81F /* PrimeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9111FC76288D739900A3E81F /* PrimeService.swift */; };
+		9111FC7A288E614000A3E81F /* ActivityFeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9111FC79288E614000A3E81F /* ActivityFeedView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		9111FC71288D6F8100A3E81F /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
 		9111FC73288D71CD00A3E81F /* FavoritesPrimeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesPrimeView.swift; sourceTree = "<group>"; };
 		9111FC76288D739900A3E81F /* PrimeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimeService.swift; sourceTree = "<group>"; };
+		9111FC79288E614000A3E81F /* ActivityFeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityFeedView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +85,7 @@
 		9111FC68288D6ADE00A3E81F /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				9111FC78288E612F00A3E81F /* ActivityFeed */,
 				9111FC6B288D6B1600A3E81F /* Favorites */,
 				9111FC6A288D6B0000A3E81F /* IsPrimeModal */,
 				9111FC69288D6AF000A3E81F /* Counter */,
@@ -128,6 +131,14 @@
 				9111FC76288D739900A3E81F /* PrimeService.swift */,
 			);
 			path = Service;
+			sourceTree = "<group>";
+		};
+		9111FC78288E612F00A3E81F /* ActivityFeed */ = {
+			isa = PBXGroup;
+			children = (
+				9111FC79288E614000A3E81F /* ActivityFeedView.swift */,
+			);
+			path = ActivityFeed;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -205,6 +216,7 @@
 				9111FC72288D6F8100A3E81F /* AppState.swift in Sources */,
 				9111FC5B288D6AB700A3E81F /* ComposableAppDemoApp.swift in Sources */,
 				9111FC6F288D6DAD00A3E81F /* IsPrimeModalView.swift in Sources */,
+				9111FC7A288E614000A3E81F /* ActivityFeedView.swift in Sources */,
 				9111FC74288D71CD00A3E81F /* FavoritesPrimeView.swift in Sources */,
 				9111FC6D288D6B3000A3E81F /* CounterView.swift in Sources */,
 			);
